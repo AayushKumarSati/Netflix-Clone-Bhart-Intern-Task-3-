@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(IN-en-20230911-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 10px 7%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.n-logo {
+    width: 125px;
+    cursor: pointer;
+}
+
+#btn button {
+    border: 0;
+    outline: 0;
+    background-color: #db0001;
+    color: #fff;
+    padding: 8px 19px;
+    font-size: 13px;
+    border-radius: 6px;
+    margin: 11px;
+    cursor: pointer;
+}
+
+#btn .lang {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 8px 11px;
+}
+
+#btn .lang img {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.header-content h1 {
+
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 700;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 600px;
+}
+
+.header-content h3 {
+    font-weight: 400;
+    margin-bottom: 18px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.header-content p {
+    font-weight: 300;
+    color: #fff;
+    font-size: 20px;
+}
+
+.Email-si {
+    background-color: white;
+    /* background-color: transparent; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.Email-si input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 18px;
+    font-size: 18px;
+}
+
+.Email-si button {
+    /* background: transparent; */
+    background-color: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 13px 20px;
+}
+
+/* ---------Feature in Netflix Web Site----------- */
+
+#features-Netflix {
+    padding: 45px 12%;
+    font-size: 23px;
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-column {
+    flex-basis: 50%;
+    margin-bottom: 25px;
+
+}
+
+#features-Netflix h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 21px;
+}
+
+.img-feature {
+
+    flex-basis: 50%;
+    margin-bottom: 25px;
+}
+
+.img-feature img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+/* --Faq section-- */
+
+#fAq-1 {
+    padding: 8px 12%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.Acc {
+    margin: 55px auto;
+    width: 100%;
+    max-width: 760px;
+
+}
+
+.Acc li {
+    list-style: none;
+    width: 100%;
+    padding: 6px;
+}
+
+.Acc li label {
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    font-size: 25px;
+    font-weight: 520;
+    background-color: #303032;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.Acc li p {
+    font-size: 16px;
+    font-weight: none;
+}
+
+label::after {
+    content: '+';
+    font-size: 45px;
+    position: absolute;
+    right: 25px;
+    transition: transform 0.6s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.Acc .content-2 {
+    background: #303032;
+    text-align: left;
+    padding: 0 22px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s, padding 0.6s;
+}
+
+.Acc input[type="radio"]:checked+label+.content-2 {
+    max-height: 500px;
+    padding: 25px 22px;
+}
+
+.Acc input[type="radio"]:checked+label::after {
+    transform: rotate(150deg);
+}
+
+#fAq-1 .Email-si {
+    max-width: 500;
+    margin: 18px auto 50px;
+}
+
+#fAq-1 small {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1px;
+    font-style: italic;
+}
+
+/* ---This Is The Footer In This Clone */
+#footer {
+
+    padding: 60px 15% 15px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+#footer h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+#footer .column {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 25px;
+}
+
+#footer .column a {
+    display: block;
+    text-decoration: none;
+    color: #d6cccc;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+#footer .row {
+    align-items: flex-start;
+    padding: 12px 0;
+}
+
+.copy-right {
+    margin-top: 20px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
